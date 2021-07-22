@@ -1,0 +1,33 @@
+<settings>
+
+    <localRepository>/Users/caijh/application/system/repository/my</localRepository>
+    <mirrors>
+        <mirror>
+            <id>alimaven</id>
+            <name>aliyun maven</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+        <mirror>
+            <id>nexus-osc-thirdparty</id>
+            <mirrorOf>thirdparty</mirrorOf>
+            <name>Nexus osc thirdparty</name>
+            <url>http://maven.oschina.net/content/repositories/thirdparty/</url>
+        </mirror>
+    </mirrors>
+
+    <profiles>
+        <profile>
+            <id>jdk-1.8</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+                <jdk>1.8</jdk>
+            </activation>
+            <properties>
+                <maven.compiler.source>1.8</maven.compiler.source>
+                <maven.compiler.target>1.8</maven.compiler.target>
+                <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+            </properties>
+        </profile>
+    </profiles>
+</settings>
