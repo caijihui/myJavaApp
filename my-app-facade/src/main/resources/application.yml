@@ -27,3 +27,8 @@ spring:
             login-username: admin # 账号
             login-password: admin # 密码
 
+jwt:
+  header: "Authorization" #token返回头部
+  tokenPrefix: "Bearer " #token前缀
+  secret: "qwertyuiop7418520" #密钥
+  expireTime: 100 #token有效时间 (分钟) 建议一小时以上
